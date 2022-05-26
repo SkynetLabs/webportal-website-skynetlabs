@@ -1,12 +1,12 @@
 import * as React from "react";
 import Link from "../Link";
-import { ArrowRight, DiscordSmall } from "../Icons";
+import { DiscordSmall } from "../Icons";
+import useAccountMessage from "./useAccountMessage";
 
 const NewsHeader = () => {
-  const link = null;
-  const title = null;
+  const { link, title } = useAccountMessage();
 
-  if (!link) return null;
+  if (!title) return null;
 
   return (
     <div className="bg-palette-500 px-8 p-3">
@@ -14,10 +14,9 @@ const NewsHeader = () => {
         <div className="flex justify-between">
           <Link
             {...link}
-            className="text-palette-300 font-content leading-8 flex items-center overflow-hidden text-base hover:text-primary transition-colors duration-200"
+            className="text-palette-300 font-content leading-8 flex items-center overflow-hidden text-base hover:opacity-90 transition-opacity duration-200"
           >
-            <ArrowRight className="mr-2 flex-shrink-0 fill-current text-primary" />
-            <span className="truncate">{title}</span>
+            {title}
           </Link>
 
           <div className="ml-auto items-center pl-8 hidden desktop:block">

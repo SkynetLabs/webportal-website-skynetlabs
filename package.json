@@ -1,9 +1,9 @@
 {
-  "name": "website",
+  "name": "skynet-website",
   "private": true,
-  "description": "Skynet Webportal Stock Website",
-  "version": "0.1.0",
-  "author": "Skynet Labs.",
+  "description": "Skynet Portal Website customised for Skynet Labs deployments",
+  "version": "1.0.0",
+  "author": "Skynet Labs",
   "dependencies": {
     "@fontsource/sora": "4.5.8",
     "@fontsource/source-sans-pro": "4.5.9",
@@ -56,23 +56,22 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "cross-env GATSBY_API_URL=https://siasky.net gatsby develop",
-    "lint": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "cypress": "cypress"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SkynetLabs/webportal-website"
+    "url": "https://github.com/SkynetLabs/skynet-websites"
   },
   "bugs": {
-    "url": "https://github.com/SkynetLabs/webportal-website/issues"
+    "url": "https://github.com/SkynetLabs/skynet-websites/issues"
   }
 }
