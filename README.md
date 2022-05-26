@@ -6,7 +6,7 @@ This repo contains the code for the customized websites for the webportals hoste
 
 ## Development
 
-Since a repo cannot be forked within an organization, developers should set a second origin to the original website repo in order to pull in any updates. 
+Since a repo cannot be forked within an organization, developers should set a second origin to the original website repo in order to pull in any updates.
 
 ```
 git remote add webportal-website git@github.com:SkynetLabs/webportal-website.git
@@ -15,7 +15,7 @@ git remote add webportal-website git@github.com:SkynetLabs/webportal-website.git
 You can check that your local environment is set up properly like so:
 
 ```
-$ git remote -vv 
+$ git remote -vv
 origin  git@github.com:SkynetLabs/webportal-website-skynetlabs.git (fetch)
 origin  git@github.com:SkynetLabs/webportal-website-skynetlabs.git (push)
 weportal-website        git@github.com:SkynetLabs/webportal-website.git (fetch)
