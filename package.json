@@ -1,5 +1,5 @@
 {
-  "name": "skynet-website",
+  "name": "webportal-website-skynetlabs",
   "private": true,
   "description": "Skynet Portal Website customised for Skynet Labs deployments",
   "version": "1.0.0",
@@ -60,18 +60,19 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "cross-env GATSBY_API_URL=https://siasky.net gatsby develop",
+    "lint": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "cypress": "cypress"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SkynetLabs/skynet-websites"
+    "url": "https://github.com/SkynetLabs/webportal-website-skynetlabs"
   },
   "bugs": {
-    "url": "https://github.com/SkynetLabs/skynet-websites/issues"
+    "url": "https://github.com/SkynetLabs/webportal-website-skynetlabs/issues"
   }
 }

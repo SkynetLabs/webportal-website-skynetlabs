@@ -100,5 +100,5 @@ jobs:
         with:
           docker_username: ${{ secrets.DOCKER_USERNAME}}
           docker_password: ${{ secrets.DOCKER_PASSWORD}}
-          docker_repository: skynetlabs/webportal-website
+          docker_repository: skynetlabs/webportal-website-skynetlabs
           semver_version: ${{ needs.release.outputs.new_version }}
