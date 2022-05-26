@@ -8,17 +8,17 @@ WORKDIR /usr/app
 ENV GATSBY_TELEMETRY_DISABLED 1
 ENV CYPRESS_INSTALL_BINARY 0
 
-COPY packages/website/package.json \
-     packages/website/yarn.lock \
+COPY package.json \
+     yarn.lock \
      ./
 RUN yarn --frozen-lockfile
 
-COPY packages/website/data ./data
-COPY packages/website/src ./src
-COPY packages/website/static ./static
-COPY packages/website/gatsby-*.js \
-     packages/website/postcss.config.js \
-     packages/website/tailwind.config.js \
+COPY data ./data
+COPY src ./src
+COPY static ./static
+COPY gatsby-*.js \
+     postcss.config.js \
+     tailwind.config.js \
      ./
 
 EXPOSE 9000
