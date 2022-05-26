@@ -17,6 +17,10 @@ on:
           - minor
           - major
 
+# Define PORTAL_DOMAIN env for website deploy
+env:
+  PORTAL_DOMAIN: siasky.net
+
 jobs:
   # Run the linting and tests
   hadolint:
@@ -73,7 +77,7 @@ jobs:
 
   # Make a release if this is a manually trigger job, i.e. workflow_dispatch
   release:
-    needs: [hadolint, check]
+    needs: [hadolint, check, deploy]
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'workflow_dispatch' }}
     outputs:
