@@ -1,6 +1,16 @@
 import * as React from "react";
 import { Link as GatsbyLink } from "gatsby";
 
+function isValidUrl(url) {
+  try {
+    new URL(url); // throws on invalid url
+  } catch {
+    return false;
+  }
+
+  return true;
+}
+
 export default function Link({
   children,
   to,
@@ -10,9 +20,12 @@ export default function Link({
   rel = "noopener noreferrer",
   ...params
 }) {
-  if (to) {
+  // if to is defined or href is relative path then use GatsbyLink
+  const internal = to || (!isValidUrl(params.href) && params.href);
+
+  if (internal) {
     return (
-      <GatsbyLink to={to} activeClassName={activeClassName} partiallyActive={partiallyActive} {...params}>
+      <GatsbyLink to={internal} activeClassName={activeClassName} partiallyActive={partiallyActive} {...params}>
         {children}
       </GatsbyLink>
     );
