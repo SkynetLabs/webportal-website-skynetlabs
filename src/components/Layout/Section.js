@@ -6,7 +6,6 @@ export const Section = ({
   children,
   className,
   width = "content",
-  first = false,
   marginBottom = true,
   marginTop = true,
   ...props
@@ -15,8 +14,7 @@ export const Section = ({
     className={classnames(
       "px-8",
       {
-        "pt-32 desktop:pt-48": marginTop && first, // + navigation offset => pt-32 desktop:pt-48
-        "pt-12 desktop:pt-24": marginTop && !first,
+        "pt-12 desktop:pt-24": marginTop,
         "pb-12 desktop:pb-24": marginBottom,
       },
       className

@@ -41,7 +41,11 @@ const Navigation = ({ mode, uri }) => {
     <nav
       className={classnames("relative px-8 py-6 transition-all duration-500", {
         "bg-white border-b border-palette-200": mode === "light",
-        "bg-palette-600 bg-opacity-50": mode === "dark",
+        "bg-palette-600": mode === "dark",
+        // On mobile, when user starts scrolling we want the sticky navigation bar's background to be a solid solid, as text may overlap and become unreadable.
+        "bg-opacity-50": mode === "dark" && isWindowTop,
+        // On desktop, navigation can be semi-transparent at all times, as the text is unlikely to collide with the text below.
+        "desktop:bg-opacity-50": mode === "dark",
         "desktop:py-12": isWindowTop,
       })}
       ref={navRef}
