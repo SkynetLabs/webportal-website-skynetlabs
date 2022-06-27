@@ -32,7 +32,7 @@ const FixedHeader = ({ uri }) => {
   }, [setMode, mode, y, uri]);
 
   return (
-    <div ref={ref} className="fixed inset-x-0 top-0 z-50">
+    <div ref={ref} className="sticky top-0 z-50">
       <NewsHeader />
       {mode && <Navigation mode={mode} uri={uri} />}
     </div>
@@ -51,7 +51,7 @@ const Layout = ({ children, uri }) => {
   // `);
 
   return (
-    <div className="background bg-top bg-contain">
+    <div className="background bg-top bg-cover desktop:bg-contain">
       <FixedHeader uri={uri} />
       <main>{children}</main>
       <FooterNavigation />
