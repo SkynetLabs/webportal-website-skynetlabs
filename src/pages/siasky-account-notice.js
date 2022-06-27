@@ -14,7 +14,7 @@ const AccountPage = ({ navigate }) => {
     <>
       <Seo title="Customer Accounts Moved Permanently" />
 
-      <Section className="bg-white">
+      <Section first={true} className="bg-white">
         <div className="text-left">
           <SectionTitleCaption>Siasky.net Customer Notice</SectionTitleCaption>
           <SectionTitle>Customer Accounts Moved Permanently</SectionTitle>
