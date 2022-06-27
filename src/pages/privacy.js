@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => (
   <>
     <Seo title="Privacy Policy" />
 
-    <Section first={true} className="bg-white">
+    <Section className="bg-white">
       <h1 className="capitalize">
         <DomainName /> Privacy Policy
       </h1>

@@ -10,7 +10,7 @@ const TermsPage = () => (
   <>
     <Seo title="Terms of Use" />
 
-    <Section first={true} className="bg-white">
+    <Section className="bg-white">
       <h1 className="capitalize">
         <DomainName /> Terms of Use
       </h1>

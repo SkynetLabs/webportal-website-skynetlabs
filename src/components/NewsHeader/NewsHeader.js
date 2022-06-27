@@ -14,7 +14,7 @@ const NewsHeader = () => {
         <div className="flex justify-between">
           <Link
             {...link}
-            className="text-palette-300 font-content leading-8 flex items-center overflow-hidden text-base hover:opacity-90 transition-opacity duration-200"
+            className="text-palette-300 font-content leading-8 overflow-hidden text-base hover:opacity-90 transition-opacity duration-200"
           >
             {title}
           </Link>
