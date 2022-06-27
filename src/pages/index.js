@@ -9,7 +9,7 @@ const IndexPage = () => {
     <>
       <Seo title="Decentralized Internet for a Free Future" />
 
-      <Section first={true}>
+      <Section>
         <div className="text-center">
           <h1 className="text-4xl desktop:text-6xl text-white">
             Decentralized Internet
