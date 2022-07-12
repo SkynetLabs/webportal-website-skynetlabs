@@ -12,7 +12,7 @@
     "classnames": "2.3.1",
     "copy-text-to-clipboard": "3.0.1",
     "crypto-browserify": "3.12.0",
-    "framer-motion": "6.3.3",
+    "framer-motion": "6.4.3",
     "gatsby": "4.13.1",
     "gatsby-background-image": "1.6.0",
     "gatsby-plugin-env-variables": "2.2.0",
@@ -40,7 +40,7 @@
     "react-dom": "17.0.2",
     "react-dropzone": "14.2.0",
     "react-helmet": "6.1.0",
-    "react-use": "17.3.2",
+    "react-use": "17.4.0",
     "skynet-js": "4.2.3-beta",
     "stream-browserify": "3.0.0",
     "swr": "1.3.0"
