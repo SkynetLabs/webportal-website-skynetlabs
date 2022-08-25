@@ -50,13 +50,12 @@ jobs:
         with:
           node-version: 16.x
           cache: yarn
-          cache-dependency-path: yarn.lock
 
       - run: yarn
       - run: yarn build
 
       - name: "Integration tests"
-        uses: cypress-io/github-action@v3
+        uses: cypress-io/github-action@v4
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
