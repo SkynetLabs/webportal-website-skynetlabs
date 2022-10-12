@@ -1,3 +1,4 @@
+import * as React from "react";
 import isDomain from "../../services/isDomain";
 import currentDomain from "../../services/currentDomain";
 
@@ -9,6 +10,6 @@ const siaskyMessage = "On November 15th, siasky.net will be shutting down. Click
 export default function useShutdownMessage() {
   return {
     link: { href: `https://skynetlabs.com/news/skynet-labs-full-shutdown`, target: null, rel: null },
-    title: isSiasky ? siaskyMessage : message,
+    title: <span className="!text-primary">{isSiasky ? siaskyMessage : message}</span>,
   };
 }
