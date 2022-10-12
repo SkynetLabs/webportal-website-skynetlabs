@@ -1,10 +1,10 @@
 import * as React from "react";
 import Link from "../Link";
 import { DiscordSmall } from "../Icons";
-import useAccountMessage from "./useAccountMessage";
+import useShutdownMessage from "./useShutdownMessage";
 
 const NewsHeader = () => {
-  const { link, title } = useAccountMessage();
+  const { link, title } = useShutdownMessage();
 
   if (!title) return null;
 
